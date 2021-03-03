@@ -191,6 +191,7 @@ class Module extends \Opencart\System\Engine\Controller {
 
 		array_multisort($sort_order, SORT_ASC, $data['extensions']);
 
+		//Recommended
 		$data['promotion'] = $this->load->controller('marketplace/promotion');
 
 		return $this->load->view('extension/module', $data);
